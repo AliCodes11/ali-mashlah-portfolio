@@ -1,0 +1,2 @@
+import { ArrowLeft } from 'lucide-react';
+export default function NotFound() { return <main className="not-found wrap"><a className="wordmark" href="/">am<span>.</span></a><span className="eyebrow">404 / PAGE NOT FOUND</span><h1>A small detour.</h1><p>That page isn’t here. There’s plenty of work to explore back at the portfolio.</p><a className="primary-link" href="/"><ArrowLeft size={16}/>Back to the portfolio</a></main>; }
