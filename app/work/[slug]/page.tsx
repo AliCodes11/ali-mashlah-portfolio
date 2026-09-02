@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, Code2 } from 'lucide-react';
 import { projects } from '@/lib/projects';
 import { ProjectCover } from '@/components/project-cover';
 import { CradleExperience } from '@/components/cradle-experience';
+import { PocketShowcase } from '@/components/pocket-showcase';
 
 export function generateStaticParams() { return projects.map(project => ({slug: project.slug})); }
 export async function generateMetadata({params}: {params: Promise<{slug:string}>}): Promise<Metadata> {
@@ -21,6 +22,7 @@ export default async function ProjectPage({params}: {params:Promise<{slug:string
     <article className="case-study wrap"><div className="case-intro"><span className="eyebrow">{project.index} / {project.discipline}</span><h1>{project.title}</h1><p className="case-subtitle">{project.subtitle}</p><div className="case-meta"><span>{project.context}</span><div>{project.stack.map(item=><span className="stack-tag" key={item}>{item}</span>)}</div></div></div>
     <ProjectCover project={project}/>
     <div className="case-story"><aside><span className="eyebrow">THE PROJECT</span><p>{project.summary}</p><div className="case-links">{project.live && <a className="primary-link" href={project.slug==='newtons-cradle'?'#experience-heading':project.live} target={project.slug==='newtons-cradle'?undefined:'_blank'} rel={project.slug==='newtons-cradle'?undefined:'noopener noreferrer'}>{project.slug==='newtons-cradle'?'Try the experience':'Visit Lafah'}<ArrowUpRight size={16}/></a>}{project.repository && <a className="text-link" href={project.repository} target="_blank" rel="noopener noreferrer"><Code2 size={16}/>Project source <ArrowUpRight size={14}/></a>}</div></aside><div><section><span className="eyebrow">THE CHALLENGE</span><h2>What needed to work.</h2><p>{project.challenge}</p></section><section><span className="eyebrow">THE APPROACH</span><h2>Connecting the pieces.</h2><p>{project.approach}</p></section></div></div>
+    {project.slug==='pocket-shop'&&<PocketShowcase/>}
     <section className="feature-section"><span className="eyebrow">INSIDE THE PROJECT</span><h2>The details that matter.</h2><div className="feature-grid">{project.features.map((feature,index)=><section key={feature.title}><span className="feature-number">0{index+1}</span><h3>{feature.title}</h3><p>{feature.text}</p></section>)}</div></section>
     <section className="flow-section" aria-label="Project architecture"><span className="eyebrow">HOW IT CONNECTS</span><ol>{project.flow.map((item,index)=><li key={item}><span>{item}</span>{index<project.flow.length-1&&<ArrowRight aria-hidden="true" size={18}/>}</li>)}</ol></section>
     {project.slug==='newtons-cradle'&&<CradleExperience/>}
