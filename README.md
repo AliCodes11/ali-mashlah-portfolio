@@ -10,7 +10,7 @@ Run `npm install`, then `npm run dev`. Build with `npm run build`.
 
 - Real contact information and identity are configured in `lib/site.ts` and the page components.
 - Six case studies are defined in `lib/projects.ts`.
-- The Newton’s Cradle case study includes a self-contained canvas interaction with adjustable ball count, length, gravity, release angle, and transfer count.
+- The Newton’s Cradle case study embeds the original Three.js project unchanged, including its setup screen, full 3D scene, live parameters, materials, pointer interaction, camera controls, and physics rules.
 - Lafah links to its existing public website. Other projects have no fabricated live links.
 - No contact information is stored by this site. Email and telephone links open the visitor’s own applications.
 
