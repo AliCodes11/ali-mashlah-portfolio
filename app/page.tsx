@@ -66,7 +66,7 @@ export default function Home() {
         <p className="human-note">I’m most interested in the places where different parts of software have to agree: people, screens, rules, data, and motion.</p>
         <div className="hero-actions"><a className="primary-link" href="#work">See what I’ve built <ArrowDown size={17}/></a><a className="text-link" href="mailto:alimashlah70@gmail.com">Start a conversation <ArrowUpRight size={17}/></a></div>
       </div>
-      <figure className="portrait portrait-human"><img src="/images/ali-mashlah.jpg" alt="Ali Mashlah" fetchPriority="high"/><figcaption><span>Hi, I’m Ali.<small>I turn product ideas into working software.</small></span><ArrowUpRight size={24}/></figcaption><div className="portrait-sticker">WEB<br/>MOBILE<br/>3D</div></figure>
+      <figure className="portrait portrait-human"><img src="/images/ali-mashlah-profile-2026.jpg" alt="Ali Mashlah" fetchPriority="high"/><figcaption><span>Hi, I’m Ali.<small>I turn product ideas into working software.</small></span><ArrowUpRight size={24}/></figcaption><div className="portrait-sticker">WEB<br/>MOBILE<br/>3D</div></figure>
     </section>
 
     <div className="discipline-strip"><div className="wrap"><span>React + Laravel</span><i>→</i><span>Flutter</span><i>→</i><span>Three.js + OpenGL</span><i>→</i><span>Java desktop</span></div></div>
