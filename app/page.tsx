@@ -27,7 +27,7 @@ const capabilities = [
     text: 'I build Flutter clients that share backend behavior with the web while keeping navigation, media, and role-specific tasks native to mobile.',
     skills: ['Flutter', 'Dart', 'API clients', 'Media handling', 'Mobile UX'],
     proof: ['Pocket Shop', 'Apartment Booking'],
-    href: '/work/apartment-booking',
+    href: '/work/pocket-shop',
   },
   {
     icon: Box,

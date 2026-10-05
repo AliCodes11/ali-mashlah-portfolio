@@ -8,8 +8,8 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: 'pocket-shop', title: 'Pocket Shop', category: 'Web & Mobile', index: '01', discipline: 'CONNECTED COMMERCE',
-    subtitle: 'One store. Web and mobile, connected.',
-    summary: 'A shopping ecosystem connecting a React storefront and Flutter application to one Laravel backend.',
+    subtitle: 'A customer storefront, a Flutter app, and an operations dashboard—sharing one commerce system.',
+    summary: 'A three-sided shopping system connecting React customer and admin interfaces with a Flutter mobile app through one Laravel backend.',
     stack: ['React', 'Flutter', 'Laravel', 'MySQL'], context: 'Collaborative application project',
     challenge: 'Keep products, orders, and inventory consistent across web and mobile while extending the website with personalized shopping features.',
     approach: 'A shared Laravel API and database provide the common foundation. Website-specific endpoints add recommendations and color selection while preserving the existing mobile API contracts.',
@@ -20,8 +20,9 @@ export const projects: Project[] = [
       { title: 'Day-to-day administration', text: 'Administration workflows cover products, categories, customers, coupons, and orders. Customers can edit or cancel eligible pending orders.' },
     ],
     flow: ['React storefront + Flutter app', 'Laravel REST API', 'Shared MySQL catalog & orders'],
-    note: 'This case study describes the application and integration work. No commercial sales or user-growth claims are made.',
+    note: 'The gallery was captured from a working local environment with 118 product records. The orders, customer, and revenue shown are development data created to demonstrate the connected workflows.',
     repository: 'https://github.com/wissam276/Pocket-Store',
+    image: '/images/pocket-shop/web/storefront-home.png',
   },
   {
     slug: 'lafah', title: 'Lafah', category: 'Web & Mobile', index: '02', discipline: 'MULTI-VENDOR MARKETPLACE',
